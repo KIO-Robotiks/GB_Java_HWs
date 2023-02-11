@@ -32,17 +32,18 @@
 // }
 
 //3. Реализовать простой калькулятор.
-// import java.util.Scanner;
-// public class Program {
-//    public static void main(String[] args) {
-//        Scanner iScanner = new Scanner(System.in);
-//        System.out.printf("int a: ");
-//        int a = iScanner.nextInt();
-//        System.out.printf("int b: ");
-//        int b = iScanner.nextInt();
-//        System.out.printf("sum of %d and %d = %d\n", a, b, a + b);
-//    }
-// }
+import java.util.Scanner;
+public class Program {
+   public static void main(String[] args) {
+       Scanner iScanner = new Scanner(System.in);
+       System.out.printf("int a: ");
+       int a = iScanner.nextInt();
+       System.out.printf("int b: ");
+       int b = iScanner.nextInt();
+       iScanner.close();
+       System.out.printf("sum of %d and %d = %d\n", a, b, a + b);
+   }
+}
 
 //4. Уравнение вида q + w = e; q,w,e >= 0; 2? + ?5 = 69. Предложить решение.
 // public class Program {
