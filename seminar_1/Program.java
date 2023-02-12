@@ -16,9 +16,9 @@ public class Program {
          return n*(n+1)/2;
     }
 
-    static int getInt(String text_) {
+    static int getInt(String text) {
          Scanner in = new Scanner(System.in);
-         System.out.println(text_);
+         System.out.println(text);
          int num = in.nextInt();
          in.close();
          return num;
