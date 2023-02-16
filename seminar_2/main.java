@@ -124,7 +124,13 @@ public class main {
             String grade = student.get("оценка").toString();
             String item = student.get("предмет").toString();
 
-            result_sb.append("Студент " + family + " получил " + grade + " по предмету " + item);
+            result_sb.append("Студент ");
+            result_sb.append(family);
+            result_sb.append(" получил ");
+            result_sb.append(grade);
+            result_sb.append(" по предмету ");
+            result_sb.append(item);
+
             result_arr[i] = result_sb;
         }
         return result_arr;
