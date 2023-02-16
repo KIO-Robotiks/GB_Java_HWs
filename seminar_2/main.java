@@ -81,6 +81,7 @@ import java.nio.file.Paths;
 import java.io.IOException;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class main {
@@ -104,10 +105,12 @@ public class main {
             String base_txt = new String(Files.readAllBytes(Paths.get(pathFile)));
             JSONArray base_array = new JSONArray(base_txt);
             return base_array;
-        } catch (IOException e) {
+        } catch (JSONException e) {
 //            e.printStackTrace();
             System.out.println("Неправильный формат файла.");
             return null;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
     static StringBuilder[] getStudentsInfo(JSONArray base_array){
