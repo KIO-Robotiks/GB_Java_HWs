@@ -51,36 +51,36 @@
 
 //        2.Пусть дан произвольный список целых чисел, удалить из него четные числа.
 
-//import java.util.ArrayList;
-//import java.util.List;
-//
-//public class main {
-//
-//    public static void main(String[] args) {
-//
-//        Integer[] arr = {6,3,8,11,22,44,56,77,213,447,800};
-//        ArrayList<Integer> arrObj = new ArrayList<>(List.of(arr));
-//        print(arrObj);
-//        ArrayList<Integer> result = delEven(arr);
-//        print(result);
-//
-//    }
-//
-//    private static ArrayList<Integer> delEven(Integer[] arr) {
-//        ArrayList<Integer> result = new ArrayList<>();
-//        for (int el: arr) {
-//            if (el%2 != 0) result.add(el);
-//        }
-//        return result;
-//    }
-//
-//    static void print(ArrayList<Integer> arr){
-//        for (int i: arr) {
-//            System.out.printf("%d ", i);
-//        }
-//        System.out.println();
-//    }
-//}
+import java.util.ArrayList;
+import java.util.List;
+
+public class main {
+
+    public static void main(String[] args) {
+
+        Integer[] arr = {6,3,8,11,22,44,56,77,213,447,800};
+        ArrayList<Integer> arrObj = new ArrayList<>(List.of(arr));
+        print(arrObj);
+        ArrayList<Integer> result = delEven(arr);
+        print(result);
+
+    }
+
+    private static ArrayList<Integer> delEven(Integer[] arr) {
+        ArrayList<Integer> result = new ArrayList<>();
+        for (int el: arr) {
+            if (el%2 != 0) result.add(el);
+        }
+        return result;
+    }
+
+    static void print(ArrayList<Integer> arr){
+        for (int i: arr) {
+            System.out.printf("%d ", i);
+        }
+        System.out.println();
+    }
+}
 
 //        3.Задан целочисленный список ArrayList. Найти минимальное, максимальное и среднее арифметическое этого списка.
 //        Я решил в этой задаче всё-таки найти элемент наиболее приближенный к среднему арифметическому.
